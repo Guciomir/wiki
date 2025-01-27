@@ -132,6 +132,11 @@
     <footer>
         <p>© 2077 Spelljammer Wiki</p>
     </footer>
-    <script src="../js/menu.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.side-menu');
+            menu.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>

@@ -5,26 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spelljammer Wiki - Postacie</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="icon" type="image/x-icon" href="../images/logo.png">
 </head>
 <body>
-    <header>
-        <img src="../images/logo.png" alt="Spelljammer Wiki Logo">
-        <h1>Spelljammer Wiki - Postacie</h1>
-        <nav>
+    <div class="wrapper">
+        <header>
+            <img src="../images/logo.png" alt="Spelljammer Wiki Logo">
+            <h1>Spelljammer Wiki - Postacie</h1>
+            <button class="side-menu-trigger" onclick="toggleMenu()">Menu</button>
+        </header>
+        <aside class="side-menu">
             <ul>
                 <li><a href="../index.html">Strona główna</a></li>
                 <li><a href="historia.html">Historia świata</a></li>
                 <li><a href="lokacje.html">Lokacje</a></li>
+                <li><a href="#pc">PC</a></li>
+                <li><a href="#npc">NPC</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <h2></h2>
-        <p></p>
-    </main>
+        </aside>
+        <main>
+            <section id="pc">
+                <h2>PC</h2>
+                <article>
+                    <h3>Cargo</h3>
+                    <p>Opis postaci Cargo.</p>
+                </article>
+                <article>
+                    <h3>Imię Postaci 2</h3>
+                    <p>Opis drugiej postaci gracza.</p>
+                </article>
+            </section>
+
+            <section id="npc">
+                <h2>NPC</h2>
+                <article>
+                    <h3>Imię NPC 1</h3>
+                    <p>Opis pierwszego NPC.</p>
+                </article>
+                <article>
+                    <h3>Imię NPC 2</h3>
+                    <p>Opis drugiego NPC.</p>
+                </article>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>© 2077 Spelljammer Wiki</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.side-menu');
+            menu.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>

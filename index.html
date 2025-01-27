@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spelljammer Wiki</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <link rel="icon" type="image/svg+xml" href="./images/logo.png">
 </head>
 <body>
@@ -12,14 +13,16 @@
         <header>
             <img src="./images/logo.png" alt="Spelljammer Wiki Logo">
             <h1>Spelljammer Wiki</h1>
-            <nav>
-                <ul>
-                    <li><a href="pages/historia.html">Historia świata</a></li>
-                    <li><a href="pages/postacie.html">Postacie</a></li>
-                    <li><a href="pages/lokacje.html">Lokacje</a></li>
-                </ul>
-            </nav>
+            <button class="side-menu-trigger" onclick="toggleMenu()">Menu</button>
         </header>
+        <aside class="side-menu">
+            <ul>
+                <li></li>
+                <li><a href="pages/historia.html">Historia świata</a></li>
+                <li><a href="pages/postacie.html">Postacie</a></li>
+                <li><a href="pages/lokacje.html">Lokacje</a></li>
+            </ul>
+        </aside>
         <main>
             <h2>Witamy w Polysferze</h2>
             <p>
@@ -39,5 +42,12 @@
     <footer>
         <p>© 2077 Spelljammer Wiki</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.side-menu');
+            menu.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>

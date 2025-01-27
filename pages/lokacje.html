@@ -3,28 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spelljammer Wiki - Lolacje</title>
+    <title>Spelljammer Wiki - Lokacje</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="icon" type="image/x-icon" href="../images/logo.png">
 </head>
 <body>
-    <header>
-        <img src="../images/logo.png" alt="Spelljammer Wiki Logo">
-        <h1>Spelljammer Wiki - Lolacje</h1>
-        <nav>
+    <div class="wrapper">
+        <header>
+            <img src="../images/logo.png" alt="Spelljammer Wiki Logo">
+            <h1>Spelljammer Wiki - Lokacje</h1>
+            <button class="side-menu-trigger" onclick="toggleMenu()">Menu</button>
+        </header>
+        <aside class="side-menu">
             <ul>
                 <li><a href="../index.html">Strona główna</a></li>
                 <li><a href="postacie.html">Postacie</a></li>
-                <li><a href="lokacje.html">Lokacje</a></li>
+                <li><a href="#lokacje">Lokacje</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <h2></h2>
-        <p></p>
-    </main>
+        </aside>
+        <main>
+            <section id="lokacje">
+                <h2>Lokacje</h2>
+                <article>
+                    <h3>Opis Lokacji 1</h3>
+                    <p>Opis pierwszej lokacji w świecie Spelljammer. Opis miejsca, jego cechy i ciekawe wydarzenia związane z tym miejscem.</p>
+                </article>
+                <article>
+                    <h3>Opis Lokacji 2</h3>
+                    <p>Opis drugiej lokacji w świecie Spelljammer. Możliwe spotkania i przygody związane z tym miejscem.</p>
+                </article>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>© 2077 Spelljammer Wiki</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.side-menu');
+            menu.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>

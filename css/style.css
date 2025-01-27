@@ -89,6 +89,12 @@ a:hover {
 	color: #ffc107;
 }
 
+.bionoid-img {
+    float: right;
+    margin: 10px;
+    width: 35%;
+    height: auto;
+}
 
 footer {
     text-align: center;

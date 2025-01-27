@@ -85,15 +85,26 @@ a {
 	color: #ffc107;
 }
 
-a:hover {
-	color: #ffc107;
-}
-
 .bionoid-img {
     float: right;
-    margin: 10px;
+    margin: 20px;
+    margin-bottom: 7px;
     width: 35%;
     height: auto;
+    border: solid;
+    border-radius: 2px;
+    border-color: #ffc107;
+}
+
+.spirit_warrior-img {
+    float: right;
+    margin: 20px;
+    margin-bottom: 7px;
+    width: 35%;
+    height: auto;
+    border: solid;
+    border-radius: 2px;
+    border-color: #ffc107;
 }
 
 footer {

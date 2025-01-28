@@ -136,6 +136,17 @@ a {
     border-color: #ffc107;
 }
 
+.spelljammer-img {
+    float: right;
+    margin: 20px;
+    margin-bottom: 7px;
+    width: 35%;
+    height: auto;
+    border: solid;
+    border-radius: 2px;
+    border-color: #ffc107;
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
